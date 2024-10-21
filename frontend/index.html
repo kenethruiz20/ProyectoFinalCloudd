@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contacts Manager</h1>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Add New Contact</h2>
+            <input type="text" id="contact-name" placeholder="Name" required>
+            <input type="text" id="contact-phone" placeholder="Phone" required>
+            <input type="email" id="contact-email" placeholder="Email" required>
+            <button onclick="addContact()">Add Contact</button>
+        </div>
+
+        <!-- Contact List -->
+        <div class="contact-list">
+            <h2>All Contacts</h2>
+            <ul id="contact-list" class="list-group"></ul>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
